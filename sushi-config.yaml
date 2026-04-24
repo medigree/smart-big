@@ -1,5 +1,5 @@
-id: fhir.example
-canonical: http://example.org
+id: smart.who.int.big
+canonical: https://github.com/medigree/smart-big
 name: largeIG
 status: draft
 version: 0.1.0
