@@ -12,7 +12,5 @@
     "category": "Care Management",
     "desc" : "STU 1.0 Ballot release",
     "first": true,
-    "descmd" : "STU 1.0 Ballot release. This is the first release of the FHIR Clinical Order Workflows Implementation Guide",
-    "additional-version-properties":
-      {"full-ig.zip":"https://github.com/medigree/smart-big/releases/download/v0.1.0/"}
+    "descmd" : "STU 1.0 Ballot release. This is the first release of the FHIR Clinical Order Workflows Implementation Guide"
 }
