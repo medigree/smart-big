@@ -1,0 +1,19 @@
+# Auto-generated — paste under `parameters:` in sushi-config.yaml
+# Or copy the full parameters block if starting fresh.
+
+parameters:
+  tx-server: n/a
+  validation:
+    - allow-any-extensions
+    - no-broken-links
+  no-validate:
+    - http://example.org/fhir/CodeSystem/bulk-test-cs-clinical
+    - http://example.org/fhir/ValueSet/bulk-test-vs-clinical
+    - http://example.org/fhir/CodeSystem/bulk-test-cs-admin
+    - http://example.org/fhir/ValueSet/bulk-test-vs-admin
+    - http://example.org/fhir/CodeSystem/bulk-test-cs-device
+    - http://example.org/fhir/ValueSet/bulk-test-vs-device
+    - http://example.org/fhir/CodeSystem/bulk-test-cs-procedure
+    - http://example.org/fhir/ValueSet/bulk-test-vs-procedure
+    - http://example.org/fhir/CodeSystem/bulk-test-cs-specimen
+    - http://example.org/fhir/ValueSet/bulk-test-vs-specimen
