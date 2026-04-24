@@ -14,22 +14,20 @@ jobs:
     outputs:
       file_exists: ${{ steps.checkfile.outputs.exists }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.release.tag_name }}
+          ref: ${{ github.event.release.tag_name || github.ref }}
 
       - name: Check for publication-request.json
         id: checkfile
         run: |
           if [[ -f "publication-request.json" ]]; then
-            echo "::set-output name=exists::true"
+            echo "exists=true"  >> "$GITHUB_OUTPUT"
           else
-            echo "::set-output name=exists::false"
+            echo "exists=false" >> "$GITHUB_OUTPUT"
           fi
 
   trigger:
     needs: check
     if: needs.check.outputs.file_exists == 'true'
     uses: medigree/smart-html/.github/workflows/release.yml@main
-  
