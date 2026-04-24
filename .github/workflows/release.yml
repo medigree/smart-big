@@ -21,11 +21,18 @@ jobs:
       - name: Check for publication-request.json
         id: checkfile
         run: |
+          echo "event_name=$GITHUB_EVENT_NAME"
+          echo "ref=$GITHUB_REF  ref_name=$GITHUB_REF_NAME  ref_type=$GITHUB_REF_TYPE"
+          echo "pwd=$(pwd)"
+          ls -la
           if [[ -f "publication-request.json" ]]; then
+            echo "FOUND"
             echo "exists=true"  >> "$GITHUB_OUTPUT"
           else
+            echo "NOT FOUND"
             echo "exists=false" >> "$GITHUB_OUTPUT"
           fi
+
 
   trigger:
     needs: check
