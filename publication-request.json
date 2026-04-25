@@ -1,7 +1,7 @@
 {
   "package-id" : "smart.who.int.big",
   "version" : "0.1.0",
-  "path": "https://github.com/medigree/smart-big/v0.1.0",
+  "path": "http://smart.who.int/big/0.1.0",
   "canonical": "http://smart.who.int/big",
   "title": "SMART Big",
   "category": "base",
