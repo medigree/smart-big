@@ -1,0 +1,21 @@
+[{
+  "id" : "bulk-test-cs-clinical",
+  "type" : "CodeSystem",
+  "url" : "http://example.org/fhir/CodeSystem/bulk-test-cs-clinical",
+  "version" : "0.1.0",
+  "name" : "BulkTestCSClinical"
+},
+{
+  "id" : "smart.who.int.big",
+  "type" : "ImplementationGuide",
+  "url" : "http://smart.who.int/big/ImplementationGuide/smart.who.int.big",
+  "version" : "0.1.0",
+  "name" : "largeIG"
+},
+{
+  "id" : "MyPatient",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/big/StructureDefinition/MyPatient",
+  "version" : "0.1.0",
+  "name" : "MyPatient"
+}]

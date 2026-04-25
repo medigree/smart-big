@@ -1,0 +1,24 @@
+{
+  "list" : [{
+    "version" : "current",
+    "path" : "http://medigree.github.io/smart-big",
+    "status" : "ci-build",
+    "sequence" : "ci-build",
+    "desc" : "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
+  },
+  {
+    "version" : "0.1.0",
+    "path" : "http://smart.who.int/big/0.1.0",
+    "status" : "release",
+    "sequence" : "Releases",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-04-25",
+    "current" : true,
+    "desc" : "0.1.0 initial release"
+  }],
+  "package-id" : "smart.who.int.big",
+  "canonical" : "http://smart.who.int/big",
+  "title" : "SMART Big",
+  "category" : "base",
+  "introduction" : "Short intro shown on the IG landing page"
+}

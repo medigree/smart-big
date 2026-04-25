@@ -1,0 +1,27 @@
+largeIG : Validation Results
+=========================================
+
+err = 2, warn = 7, info = 1
+$--
+Generated $--. FHIR version $-- for smart.who.int.big#$-- (canonical = http://smart.who.int/big)
+ Build Errors : 0 / 6 / 0
+ /home/runner/work/smart-big/smart-big/.ci-tools/temp/ig-builds/smart.who.int.big#0.1.0/fsh-generated/resources/CodeSystem-bulk-test-cs-clinical : 2 / 0 / 0
+ /home/runner/work/smart-big/smart-big/.ci-tools/temp/ig-builds/smart.who.int.big#0.1.0/fsh-generated/resources/ImplementationGuide-smart.who.int.big : 0 / 1 / 1
+ /home/runner/work/smart-big/smart-big/.ci-tools/temp/ig-builds/smart.who.int.big#0.1.0/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /home/runner/work/smart-big/smart-big/.ci-tools/temp/ig-builds/smart.who.int.big#0.1.0/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: /home/runner/work/smart-big/smart-big/.ci-tools/temp/ig-builds/smart.who.int.big#0.1.0/output/business-processes.html: Illegal HTML: illegal html element: nark (insert content here</mark>.)
+WARNING: /home/runner/work/smart-big/smart-big/.ci-tools/temp/ig-builds/smart.who.int.big#0.1.0/output/testing.html: Illegal HTML: illegal html element: static_server_port ( e.g. http://localhost:8087)
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-bulk-test-cs-clinical.json ==
+ERROR: CodeSystem.where(url = 'http://example.org/fhir/CodeSystem/bulk-test-cs-clinical'): Conformance resource /home/runner/work/smart-big/smart-big/.ci-tools/temp/ig-builds/smart.who.int.big#0.1.0/fsh-generated/resources/CodeSystem-bulk-test-cs-clinical.json - the canonical URL (http://smart.who.int/big/CodeSystem/bulk-test-cs-clinical) does not match the URL (http://example.org/fhir/CodeSystem/bulk-test-cs-clinical). Use the special-url parameter if you really mean for it not to match
+ERROR: /home/runner/work/smart-big/smart-big/.ci-tools/temp/ig-builds/smart.who.int.big#0.1.0/fsh-generated/resources/CodeSystem-bulk-test-cs-clinical: URL Mismatch http://smart.who.int/big/CodeSystem/bulk-test-cs-clinical vs http://example.org/fhir/CodeSystem/bulk-test-cs-clinical
+== fsh-generated/resources/ImplementationGuide-smart.who.int.big.json ==
+WARNING: ImplementationGuide/smart.who.int.big: ImplementationGuide: Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-MyPatient.json ==
+INFORMATION: StructureDefinition/MyPatient: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated

@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://example.org/fhir/CodeSystem/bulk-test-cs-clinical,0.1.0,draft,,BulkTestCSClinical,Bulk Test CodeSystem � Clinical Observations,"Synthetic CodeSystem (Clinical Observations) for IG size testing. Not for clinical use.",

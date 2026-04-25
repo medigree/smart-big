@@ -1,0 +1,10 @@
+{
+  "codeSystems" : [{
+    "url" : "http://example.org/fhir/CodeSystem/bulk-test-cs-clinical",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "BulkTestCSClinical",
+    "title" : "Bulk Test CodeSystem � Clinical Observations",
+    "description" : "Synthetic CodeSystem (Clinical Observations) for IG size testing. Not for clinical use."
+  }]
+}

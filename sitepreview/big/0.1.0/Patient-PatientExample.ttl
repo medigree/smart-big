@@ -1,0 +1,28 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/big/Patient/PatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://smart.who.int/big/StructureDefinition/MyPatient"^^xsd:anyURI ;
+       fhir:l <http://smart.who.int/big/StructureDefinition/MyPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample</b></p><a name=\"PatientExample\"> </a><a name=\"hcPatientExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyPatient.html\">MyPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">James Pond  (no stated gender), DoB Unknown</p><hr/></div><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Patient PatientExample</b></p><a name=\"fr-PatientExample\"> </a><a name=\"fr-hcPatientExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-MyPatient.html\">MyPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">James Pond  (sexe non précisé), Date de Naissance inconnue</p><hr/></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample</b></p><a name=\"de-PatientExample\"> </a><a name=\"de-hcPatientExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyPatient.html\">MyPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">James Pond  (no stated gender), DoB Unknown</p><hr/></div><div xml:lang=\"pt\" lang=\"pt\"><hr/><p><b>Portuguese</b></p><hr/><p class=\"res-header-id\"><b>Narrativa gerada: Patient PatientExample</b></p><a name=\"pt-PatientExample\"> </a><a name=\"pt-hcPatientExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-MyPatient.html\">MyPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">James Pond  (sem género declarado), DN Desconhecida</p><hr/></div><div xml:lang=\"es\" lang=\"es\"><hr/><p><b>Spanish</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Paciente PatientExample</b></p><a name=\"es-PatientExample\"> </a><a name=\"es-hcPatientExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyPatient.html\">MyPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">James Pond  (no stated gender), DoB Unknown</p><hr/></div><div xml:lang=\"lt\" lang=\"lt\"><hr/><p><b>Lithuanian</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Patient PatientExample</b></p><a name=\"lt-PatientExample\"> </a><a name=\"lt-hcPatientExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MyPatient.html\">MyPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">James Pond  (no stated gender), DoB Unknown</p><hr/></div></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Pond" ] ;
+     fhir:given ( [ fhir:v "James" ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
